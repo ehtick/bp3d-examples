@@ -66,6 +66,18 @@ var entities = [
         type: "FloorEntity",
     },
     {
+        name: "Office Chair",
+        image: "models/thumbnails/office_chair.png",
+        url: "models/gltf/office_chair.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "Office Chair 2",
+        image: "models/thumbnails/office_chair2.png",
+        url: "models/gltf/office_chair2.glb",
+        type: "FloorEntity",
+    },
+    {
         name: "Dresser - Dark Wood",
         image: "models/thumbnails/dresser_dark_wood.png",
         url: "models/gltf/dresser_dark_wood.glb",
@@ -215,6 +227,102 @@ var entities = [
         url: "models/gltf/shelve.gltf",
         type: "FloorEntity",
     },
+    {
+        name: "Shelve2",
+        image: "models/thumbnails/shelve2.png",
+        url: "models/gltf/shelve2.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "Shelve3",
+        image: "models/thumbnails/shelve3.png",
+        url: "models/gltf/shelve3.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "Shelf",
+        image: "models/thumbnails/shelf.png",
+        url: "models/gltf/shelf.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "Shelf 2",
+        image: "models/thumbnails/shelf2.png",
+        url: "models/gltf/shelf2.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "Shelf 3",
+        image: "models/thumbnails/shelf3.png",
+        url: "models/gltf/shelf3.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "Glass Window 3",
+        image: "models/thumbnails/glass_window3.jpg",
+        url: "models/gltf/glass_window3.glb",
+        type: "InWallFloorEntity",
+    },
+    {
+        name: "Window",
+        image: "models/thumbnails/window.png",
+        url: "models/gltf/window.glb",
+        type: "InWallEntity",
+    },
+    {
+        name: "Door2",
+        image: "models/thumbnails/door2.png",
+        url: "models/gltf/door2.glb",
+        type: "InWallFloorEntity",
+    },
+    {
+        name: "Zhiyin Storefront",
+        image: "models/thumbnails/zhiyin_storefront.png",
+        url: "models/gltf/zhiyin_storefront.glb",
+        type: "BasicEntity",
+    },
+    {
+        name: "Zhiyin Storefront text",
+        image: "models/thumbnails/zhiyin_storefront_text.png",
+        url: "models/gltf/zhiyin_storefront_text.glb",
+        type: "BasicEntity",
+    },
+    {
+        name: "Zhiyin Storefront background",
+        image: "models/thumbnails/zhiyin_storefront_background.png",
+        url: "models/gltf/zhiyin_storefront_background.glb",
+        type: "BasicEntity",
+    },
+    {
+        name: "小货架A",
+        image: "models/thumbnails/小货架A.png",
+        url: "models/gltf/小货架A.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "小货架B",
+        image: "models/thumbnails/小货架B.png",
+        url: "models/gltf/小货架B.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "收银台A",
+        image: "models/thumbnails/收银台A.png",
+        url: "models/gltf/收银台A.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "收银台B",
+        image: "models/thumbnails/收银台B.png",
+        url: "models/gltf/收银台B.glb",
+        type: "FloorEntity",
+    },
+    {
+        name: "收银台C",
+        image: "models/thumbnails/收银台C.png",
+        url: "models/gltf/收银台C.glb",
+        type: "FloorEntity",
+    },
     /*
 {
   "name" : "",
@@ -231,7 +339,7 @@ export class Entities {
     }
 
     createItem(item) {
-      return `
+        return `
         <div class="col-sm-4">
             <a class="thumbnail add-entity"
                 entity-name="${item.name}"

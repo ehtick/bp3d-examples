@@ -145,19 +145,20 @@
     <script type="importmap">
         {
             "imports": {
-                "@bp3d/core": "../../packages/core/dist/index.js",
-                "@bp3d/i18n": "../../packages/i18n/dist/index.js",
-                "@bp3d/plugins": "../../packages/plugins/dist/index.js"
+                "@bp3d/core": "../packages/core/dist/index.js",
+                "@bp3d/plugins": "../packages/plugins/dist/index.js"
             }
         }
     </script>
     <script type="module">
         import { Viewer2d, Viewer3d } from "@bp3d/core";
         import { AxisGizmoPlugin } from "@bp3d/plugins";
+        import { BottomBarPlugin } from "@bp3d/plugins";
         import { GroundGridPlugin } from "@bp3d/plugins";
         import { PlanToolbarPlugin } from "@bp3d/plugins";
         import { SkyboxPlugin } from "@bp3d/plugins";
         import { ToolbarPlugin } from "@bp3d/plugins";
+        import { TransformPlugin } from "@bp3d/plugins";
         import { ViewCubePlugin } from "@bp3d/plugins";
         import { EntitiesLoadingSpinner } from "./js/EntitiesLoadingSpinner.js";
         import { SideMenu } from "./js/SideMenu.js";
@@ -181,13 +182,15 @@
         const sideMenu = new SideMenu(viewer3d, viewer2d);
         new TextureSelector(viewer3d, sideMenu);
         new AxisGizmoPlugin(viewer3d);
+        new BottomBarPlugin(viewer3d);
         new GroundGridPlugin(viewer3d);
         new PlanToolbarPlugin(viewer3d);
         new SkyboxPlugin(viewer3d);
         new ToolbarPlugin(viewer3d);
+        new TransformPlugin(viewer3d);
         new ViewCubePlugin(viewer3d);
 
-        viewer3d.loadPlan("./plans/plan1.bp3d");
+        viewer3d.loadPlan("./plans/plan1.json");
     </script>
 </body>
 
